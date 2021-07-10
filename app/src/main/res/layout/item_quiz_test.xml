@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@drawable/edu_bg_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/Edu_spacing_standard_new"
+        android:layout_marginBottom="@dimen/Edu_spacing_control">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/Edu_spacing_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_above="@id/llAns"
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                android:layout_marginEnd="@dimen/Edu_spacing_standard_new"
+                android:text="@string/edu_lbl_notifications"
+                android:textAppearance="@style/EduFontBold"
+                android:textColor="@color/Edu_textColorPrimary"
+                android:textSize="@dimen/Edu_font_size_xxLarge"
+                android:gravity="center_vertical|center"/>
+
+            <LinearLayout
+                android:id="@+id/llAns"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/llAns1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/Edu_spacing_middle"
+                    >
+                    <TextView
+                        android:id="@+id/tvA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/edu_lbl_a"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                    <TextView
+                        android:id="@+id/tvAns1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                        android:gravity="start"
+                        android:text="@string/edu_lbl_notifications"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llAns2"
+                    android:layout_marginTop="@dimen/Edu_spacing_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/Edu_spacing_middle"
+                    >
+                    <TextView
+                        android:id="@+id/tvB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/edu_lbl_b"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                    <TextView
+                        android:id="@+id/tvAns2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                        android:gravity="start"
+                        android:text="@string/edu_lbl_notifications"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llAns3"
+                    android:layout_marginTop="@dimen/Edu_spacing_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/Edu_spacing_middle"
+                   >
+                    <TextView
+                        android:id="@+id/tvC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/edu_lbl_c"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                    <TextView
+                        android:id="@+id/tvAns3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                        android:gravity="start"
+                        android:text="@string/edu_lbl_notifications"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llAns4"
+                    android:layout_marginTop="@dimen/Edu_spacing_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/Edu_spacing_middle"
+                   >
+                    <TextView
+                        android:id="@+id/tvD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/edu_lbl_d"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                    <TextView
+                        android:id="@+id/tvAns4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                        android:gravity="start"
+                        android:text="@string/edu_lbl_notifications"
+                        android:textAppearance="@style/EduFontBold"
+                        android:textColor="@color/Edu_textColorSecondary"
+                        android:textSize="@dimen/Edu_font_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

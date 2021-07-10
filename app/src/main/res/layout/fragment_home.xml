@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:gravity="center"
+                android:text="@string/edu_lbl_hi_antonio"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/Edu_textColorPrimary"
+                android:textSize="30sp" />
+
+            <TextView
+                style="@style/EduSubHeading_Form"
+                android:layout_marginTop="@dimen/Edu_spacing_control"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:text="@string/individual_dashobard_sub_heading"
+                android:textSize="@dimen/Edu_font_size_normal" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/grey_20"
+                        android:foreground="@color/overlay_dark_10" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_gradient"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/spacing_mlarge"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:paddingTop="@dimen/spacing_mxlarge">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/suspendisse_ornare_est_ac_auctor_pulvinar"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_middle"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="@dimen/spacing_large"
+                                    android:layout_marginEnd="@dimen/spacing_medium"
+                                    android:layout_marginRight="@dimen/spacing_medium"
+                                    app:srcCompat="@drawable/ic_location"
+                                    app:tint="@color/grey_10" />
+
+                                <TextView
+                                    android:id="@+id/brief"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/the_backpacker"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/grey_10" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_dots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Edu_spacing_standard"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/Edu_spacing_standard"
+                    style="@style/EduSubHeading_Form"
+                    android:text="@string/new_jobs"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/Edu_textColorPrimary"
+                    android:textSize="@dimen/Edu_font_size_normal" />
+                <TextView
+                    android:id="@+id/tvViewAll"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/Edu_spacing_standard"
+                    android:layout_alignParentEnd="true"
+                    style="@style/EduSubHeading_Form"
+                    android:text="@string/edu_lbl_view_all" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/Edu_spacing_standard"
+                android:paddingEnd="0dp"
+                android:overScrollMode="never"
+                android:id="@+id/rvJobs"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edu_bg_shadow"
+                    android:layout_marginStart="@dimen/Edu_spacing_control_half"
+                    android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                    android:layout_marginBottom="@dimen/Edu_spacing_standard_new">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/Edu_spacing_middle"
+                        app:cardElevation="0dp"
+                        android:id="@+id/registrationBtn"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_120sdp"
+                                android:background="@color/Edu_color_setting"
+                                >
+                                <ImageView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:scaleType="fitCenter"
+                                    android:id="@+id/img1"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_reg2" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                                android:lines="2"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/Edu_textColorPrimary"
+                                android:textSize="@dimen/Edu_font_size_small"
+                                android:layout_margin="@dimen/spacing_large"
+                                android:text="@string/register_yourself" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edu_bg_shadow"
+                    android:layout_marginStart="@dimen/Edu_spacing_control_half"
+                    android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                    android:layout_marginBottom="@dimen/Edu_spacing_standard_new">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/Edu_spacing_middle"
+                        app:cardElevation="0dp"
+                        android:id="@+id/quizBtn"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_120sdp"
+                                android:background="@color/Edu_color_setting"
+                                >
+                                <ImageView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:scaleType="fitCenter"
+                                    android:id="@+id/img2"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/edu_ic_quiz1" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/spacing_large"
+                                android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                                android:fontFamily="@font/poppins_bold"
+                                android:lines="2"
+                                android:text="@string/answer_few_questions"
+                                android:textColor="@color/Edu_textColorPrimary"
+                                android:textSize="@dimen/Edu_font_size_small" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

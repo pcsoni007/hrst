@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "469090026221",
+    "firebase_url": "https://hrst-3803c-default-rtdb.firebaseio.com",
+    "project_id": "hrst-3803c",
+    "storage_bucket": "hrst-3803c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469090026221:android:1014dc0a9aa8bc38f782e4",
+        "android_client_info": {
+          "package_name": "com.cdf.cla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsFzRnKZOEDbezCA_wK4KpiqrRI8Nh330"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469090026221:android:9d570b931055addaf782e4",
+        "android_client_info": {
+          "package_name": "com.scg.hrst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469090026221-c7qfp7h3tq75fpf44pr7lbj1f5nsaa7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scg.hrst",
+            "certificate_hash": "713a643a27a3e2ea402a7d557d75ba9ad0bd2e5d"
+          }
+        },
+        {
+          "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsFzRnKZOEDbezCA_wK4KpiqrRI8Nh330"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469090026221:android:953d24b88d6f2db6f782e4",
+        "android_client_info": {
+          "package_name": "com.scg.hrstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsFzRnKZOEDbezCA_wK4KpiqrRI8Nh330"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469090026221-nlckjpvqd2ug8lj7jvkdqo88vj4ci2sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

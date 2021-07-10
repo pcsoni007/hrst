@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Edu_app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.QuizTestActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/Edu_spacing_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llTop"
+        android:layout_marginEnd="@dimen/Edu_spacing_standard_new"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edu_ic_close"
+            android:padding="@dimen/Edu_spacing_standard"
+            app:tint="@color/Edu_colorPrimary" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/sBar"
+            style="@style/EduRatingSeekBar"
+            android:progressTint="@color/Edu_colorAccent"
+            android:enabled="false"
+            android:progressDrawable="@drawable/edu_bg_seekbar"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLblResult"
+        android:layout_below="@id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Edu_spacing_standard"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/edu_lbl_result"
+        android:textAppearance="@style/EduFontBold"
+        android:textColor="@color/Edu_textColorPrimary"
+        android:textSize="@dimen/Edu_font_size_xlarge" />
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:layout_below="@id/tvLblResult"
+        android:layout_above="@id/btnLogin"
+        android:id="@+id/cardStackView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+        android:layout_marginEnd="@dimen/Edu_spacing_standard_new"
+        android:layout_marginTop="@dimen/Edu_spacing_large"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:clipToPadding="false"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="@dimen/Edu_spacing_standard_new"
+        android:id="@+id/btnLogin"
+        style="@style/EduForm_Card"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/Edu_colorPrimary"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardElevation="@dimen/Edu_spacing_control">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <TextView
+                style="@style/EduBtnLabel_Form"
+                android:text="@string/edu_lbl_continue" />
+
+            <ImageView
+                android:id="@+id/ivNext"
+                style="@style/EduBtnImg_Form" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

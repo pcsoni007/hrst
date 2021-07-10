@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/Edu_app_background"
+    tools:context=".ui.activity.ViewAllJobsActivity">
+
+    <include layout="@layout/hrst_toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <LinearLayout
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/Edu_spacing_middle"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/edu_ic_grid"
+            app:tint="@color/Edu_colorPrimary" />
+
+        <ImageView
+            android:id="@+id/ivList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/Edu_spacing_control"
+            android:src="@drawable/edu_ic_view_list" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/Edu_spacing_standard"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:paddingBottom="0dp"
+        android:layoutAnimation="@anim/edu_layout_animation"
+        android:overScrollMode="never"
+        android:id="@+id/rvJobs"/>
+
+</LinearLayout>

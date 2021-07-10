@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+     <FrameLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/edu_bg_shadow"
+         android:layout_marginStart="@dimen/Edu_spacing_control_half"
+         android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+         android:layout_marginEnd="@dimen/Edu_spacing_standard"
+         android:layout_marginBottom="@dimen/Edu_spacing_standard_new">
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="@dimen/_220sdp"
+             android:layout_height="wrap_content"
+             app:cardCornerRadius="@dimen/Edu_spacing_middle"
+             app:cardElevation="0dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:id="@+id/ivJobImg"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_120sdp"
+                     android:scaleType="centerCrop"
+                     android:src="@drawable/edu_ic_study1" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+                     android:layout_marginEnd="@dimen/Edu_spacing_standard_new"
+                     android:layout_marginBottom="@dimen/Edu_spacing_standard"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/tvHeading"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                         android:lines="2"
+                         android:fontFamily="@font/poppins_medium"
+                         android:textColor="@color/Edu_textColorPrimary"
+                         android:textSize="@dimen/Edu_font_size_large"
+                         tools:text="Bialogy basic \nScientific method" />
+
+                     <TextView
+                         android:id="@+id/tvTotalJobs"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+                         android:layout_marginBottom="@dimen/Edu_spacing_standard"
+                         android:singleLine="true"
+                         android:fontFamily="@font/poppins_medium"
+                         android:textColor="@color/Edu_textColorSecondary"
+                         android:textSize="@dimen/Edu_font_size_medium"
+                         tools:text="4 to 8 lesson" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+     </FrameLayout>
+</LinearLayout>

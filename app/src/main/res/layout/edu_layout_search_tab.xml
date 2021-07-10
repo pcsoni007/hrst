@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:layout_marginBottom="@dimen/_14sdp"
+    android:layout_marginStart="@dimen/_14sdp"
+    android:layout_marginEnd="@dimen/_14sdp"
+    android:gravity="center_vertical"
+    android:background="@drawable/edu_bg_shadow"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTab1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/edu_lbl_quiz"
+        android:textAllCaps="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Edu_textColorPrimary"
+        android:textSize="@dimen/Edu_font_size_normal" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/Edu_view_color" />
+
+    <TextView
+        android:id="@+id/tvTab2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/edu_lbl_people"
+        android:textAllCaps="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Edu_textColorSecondary"
+        android:textSize="@dimen/Edu_font_size_normal" />
+
+
+</LinearLayout>

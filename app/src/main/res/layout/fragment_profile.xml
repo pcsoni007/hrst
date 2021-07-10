@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Edu_app_background">
+
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edu_ic_settings"
+            android:padding="@dimen/Edu_spacing_standard"
+            android:layout_marginTop="@dimen/Edu_spacing_standard"
+            android:layout_marginEnd="@dimen/Edu_spacing_standard"
+            android:layout_gravity="end"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/editProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.scg.hrst.utils.EduCircleImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/Edu_spacing_standard"
+                android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edu_ic_profile1"
+                app:civ_border_color="@color/Edu_white"
+                app:civ_border_width="@dimen/_4sdp" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                android:layout_marginBottom="@dimen/Edu_spacing_middle"
+                android:background="@drawable/edu_bg_circle_course"
+                android:backgroundTint="@color/Edu_white"
+                android:padding="@dimen/_6sdp"
+                android:elevation="@dimen/Edu_spacing_control_half"
+                android:src="@drawable/edu_ic_pencil_line"
+                app:layout_anchor="@id/ivProfileImage"
+                app:layout_anchorGravity="end|bottom" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Edu_spacing_standard"
+            android:gravity="center"
+            android:text="@string/edu_username"
+            android:textAppearance="@style/EduFontBold"
+            android:textColor="@color/Edu_textColorPrimary"
+            android:textSize="28sp" />
+        <TextView
+            style="@style/EduSubHeading_Form"
+            android:layout_marginTop="@dimen/Edu_spacing_control"
+            android:text="@string/edu_user_info"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textSize="@dimen/Edu_font_size_normal" />
+
+        <!--<include layout="@layout/edu_layout_search_tab"/>
+
+        <FrameLayout
+            android:visibility="visible"
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

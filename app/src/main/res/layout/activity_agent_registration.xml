@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AgentRegistration">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agentName"
+                    android:hint="@string/name"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fatherName"
+                    android:hint="@string/father_name"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="10dp"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mobileNo"
+                        android:hint="@string/mobile_num"
+                        android:layout_margin="10dp"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:id="@+id/mobileProg"
+                        android:layout_margin="12dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:indeterminateTint="@color/black"
+                        />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/altMobileNo"
+                    android:hint="@string/alernate_mobile_no"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aadharNo"
+                    android:hint="@string/aadhar_number"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bankAcName"
+                    android:hint="@string/bank_account_name"
+                    android:layout_margin="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bankAcNo"
+                    android:hint="@string/bank_account_number"
+                    android:layout_margin="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ifscCode"
+                        android:hint="@string/ifsc_code"
+                        android:layout_margin="10dp"
+                        android:inputType="text"
+                        android:maxLength="11"
+                        />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:id="@+id/ifscProgress"
+                        android:layout_margin="12dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:indeterminateTint="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Name and Address"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/bankName"
+                    />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/aadharPicCard"
+                    android:onClick="onClick"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/grey_3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/aadharImg"
+                            android:scaleType="centerCrop"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp"
+                            android:id="@+id/aadharImgTxt"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:text="@string/upload_aadhar"
+                            />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submit"
+                    android:onClick="onClick"
+                    android:text="@string/submit_details"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

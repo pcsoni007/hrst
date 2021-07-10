@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/Edu_app_background"
+    android:layout_marginTop="@dimen/Edu_spacing_standard_new"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/edu_layout_search_tab" />
+
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

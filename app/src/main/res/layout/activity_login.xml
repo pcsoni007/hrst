@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Edu_app_background"
+    android:orientation="vertical"
+    tools:context=".ui.activity.LoginActivity"
+    >
+
+    <include layout="@layout/hrst_toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <TextView
+        style="@style/EduSubHeading_Form"
+        android:text="@string/edu_info_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/edu_bg_shadow"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/EduEditText_Form"
+            android:hint="@string/edu_hint_your_email"
+            android:inputType="textEmailAddress" />
+
+        <include layout="@layout/layout_view_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/EduEditText_Form"
+                android:hint="@string/edu_hint_your_password"
+                android:inputType="textPassword"
+                android:maxLength="8" />
+
+            <TextView
+                style="@style/EduSubHeading_Form"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/Edu_spacing_standard"
+                android:padding="@dimen/Edu_spacing_standard"
+                android:text="@string/edu_lbl_forgot"
+                android:textAllCaps="true"
+                android:textSize="@dimen/Edu_font_size_medium" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/edu_card_shadow_color_primary"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp">
+
+        <TextView
+            style="@style/EduBtnLabel_Form"
+            android:text="@string/edu_lbl_continue" />
+
+        <ImageView
+            android:id="@+id/ivNext"
+            style="@style/EduBtnImg_Form" />
+    </RelativeLayout>
+
+
+</LinearLayout>

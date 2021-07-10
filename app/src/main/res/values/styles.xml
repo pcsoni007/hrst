@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="EduAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Edu_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/Edu_colorPrimaryDark</item>
+        <item name="colorAccent">@color/Edu_colorAccent</item>
+    </style>
+    <style name="EduFontMedium">
+        <item name="fontPath">@string/edu_font_medium</item>
+    </style>
+    <style name="EduFontBold">
+        <item name="fontPath">@string/edu_font_bold</item>
+    </style>
+
+    <style name="Theme2FontBold">
+        <item name="fontPath">@string/theme2_font_bold</item>
+    </style>
+
+    <style name="Theme2AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/Theme2_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/Theme2_colorPrimaryDark</item>
+        <item name="colorAccent">@color/Theme2_colorAccent</item>
+    </style>
+
+
+    <style name="Theme2MaterialButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/Theme2_spacing_standard</item>
+        <item name="android:paddingEnd">@dimen/Theme2_spacing_standard</item>
+        <item name="android:textColor">@color/Theme2_white</item>
+        <item name="android:textSize">@dimen/Theme2_font_size_normal</item>
+        <item name="android:layout_marginStart">@dimen/Theme2_spacing_standard</item>
+        <item name="android:layout_marginEnd">@dimen/Theme2_spacing_standard</item>
+        <item name="android:background">@drawable/theme2_bg_button</item>
+        <item name="fontPath">@string/theme2_font_semi_bold</item>
+        <item name="android:elevation">@dimen/Theme2_spacing_middle</item>
+    </style>
+
+    <style name="EduEditText_Form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:backgroundTint">@color/Edu_textColorSecondary</item>
+        <item name="android:paddingStart">@dimen/Edu_spacing_standard_new</item>
+        <item name="android:paddingEnd">@dimen/Edu_spacing_standard_new</item>
+        <item name="android:paddingTop">@dimen/Edu_spacing_standard_new</item>
+        <item name="android:paddingBottom">@dimen/Edu_spacing_standard_new</item>
+        <item name="android:textColor">@color/Edu_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_normal</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="EduSubHeading_Form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Edu_textColorSecondary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_minus8sdp</item>
+    </style>
+
+    <style name="EduForm_Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20sdp</item>
+        <item name="android:layout_marginTop">@dimen/_60sdp</item>
+        <item name="android:layout_marginBottom">@dimen/Edu_spacing_standard</item>
+    </style>
+    <style name="EduBtnLabel_Form">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/EduFontMedium</item>
+        <item name="android:textColor">@color/Edu_white</item>
+        <item name="android:textSize">@dimen/Edu_font_size_normal</item>
+    </style>
+    <style name="EduBtnImg_Form">
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginEnd">@dimen/Edu_spacing_standard_new</item>
+        <item name="android:background">@drawable/edu_bg_circle</item>
+        <item name="android:padding">@dimen/Edu_spacing_control</item>
+        <item name="android:tint">@color/Edu_white</item>
+        <item name="android:src">@drawable/edu_ic_arrow_forward</item>
+    </style>
+    <style name="EduRatingSeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_6sdp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:enabled">false</item>
+        <item name="android:thumb">@null</item>
+    </style>
+
+    <style name="EduHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Edu_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_large</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+
+    <style name="ChipStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Edu_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_large</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="EduHeadingSetting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Edu_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_large</item>
+        <item name="fontPath">@string/edu_font_semibold</item>
+
+
+    </style>
+
+    <style name="EduSubHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Edu_textColorSecondary</item>
+        <item name="android:textSize">@dimen/Edu_font_size_medium</item>
+        <item name="android:lineSpacingExtra">@dimen/Edu_spacing_control_half</item>
+    </style>
+
+    <style name="EduSettingImage2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:tint">@color/Edu_textColorSecondary</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:padding">@dimen/Edu_spacing_control</item>
+        <item name="android:src">@drawable/edu_ic_keyboard_arrow_right</item>
+       </style>
+    <style name="EduSettingImage1">
+        <item name="android:layout_width">@dimen/_32sdp</item>
+        <item name="android:layout_height">@dimen/_32sdp</item>
+        <item name="android:background">@drawable/edu_bg_circle_course</item>
+        <item name="android:backgroundTint">@color/Edu_color_setting</item>
+        <item name="android:tint">@color/Edu_white</item>
+        <item name="android:padding">@dimen/Edu_spacing_standard</item>
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+    <style name="EduSwitchTheme" parent="Theme.MaterialComponents.Light">
+        <item name="android:colorControlActivated">@color/Edu_colorAccent</item>
+    </style>
+
+
+    <style name="MatAlertBoxLight" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

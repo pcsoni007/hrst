@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/Edu_spacing_standard_new"
+    android:layout_marginEnd="@dimen/Edu_spacing_standard_new"
+    android:layout_marginBottom="@dimen/Edu_spacing_standard_new"
+    android:background="@drawable/edu_bg_rounded_border"
+    android:backgroundTint="@color/Edu_colorPrimary"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvToastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/Edu_white"
+        android:textSize="@dimen/Edu_font_size_large"
+        android:paddingStart="@dimen/Edu_spacing_standard_new"
+        android:paddingEnd="@dimen/Edu_spacing_standard_new"
+        android:paddingTop="@dimen/Edu_spacing_middle"
+        android:paddingBottom="@dimen/Edu_spacing_middle"
+        tools:text="@string/app_name" />
+
+</LinearLayout>

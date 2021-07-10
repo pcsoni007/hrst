@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Edu_app_background"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MobileSignUpActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/hrst_toolbar"
+            android:id="@+id/toolbar"
+            />
+
+       <!-- <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            style="@style/EduSubHeading_Form"
+            android:text="@string/edu_lbl_skip"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/Edu_spacing_standard"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="true"/>-->
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/EduSubHeading_Form"
+        android:text="@string/edu_info_mobile"
+        android:id="@+id/titleTxt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileNoLyt"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/EduForm_Card"
+            android:background="@drawable/edu_bg_shadow"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/spacing_xmedium"
+                    android:src="@drawable/flag_india"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_91"
+                    android:textColor="@color/grey_80"
+                    android:layout_margin="@dimen/spacing_small"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/Edu_spacing_control"
+                    android:layout_marginBottom="@dimen/Edu_spacing_control"
+                    android:background="@color/Edu_colorPrimary" />
+
+
+                <EditText
+                    android:id="@+id/mobileNo"
+                    style="@style/EduEditText_Form"
+                    android:hint="@string/edu_hint_your_mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateTint="@color/Edu_colorPrimary"
+            android:id="@+id/mobileProg"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/OtpLyt"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_xmlarge"
+        >
+
+        <com.chaos.view.PinView
+            android:id="@+id/PinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:hint="@string/_0"
+            android:inputType="number"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/black"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemSpacing="2dp"
+            app:itemWidth="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/spacing_medium"
+            app:lineColor="@color/grey_20"
+            app:itemRadius="@dimen/spacing_medium"
+            app:viewType="rectangle" />
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateTint="@color/Edu_colorPrimary"
+            android:id="@+id/otpProg"
+            android:layout_margin="@dimen/spacing_large"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Edu_spacing_large"
+            android:gravity="center"
+            android:text="@string/edu_lbl_i_didn_t_receive_a_code"
+            android:textColor="@color/Edu_textColorPrimary"
+            android:textSize="@dimen/Edu_font_size_medium" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Edu_spacing_control"
+            android:gravity="center"
+            android:text="@string/edu_lbl_resend"
+            android:textAllCaps="true"
+            android:textAppearance="@style/EduFontMedium"
+            android:textColor="@color/Edu_colorPrimary"
+            android:textSize="@dimen/Edu_font_size_medium" />
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnMobile"
+        style="@style/EduForm_Card"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:cardBackgroundColor="@color/Edu_colorPrimary"
+        app:cardCornerRadius="@dimen/_12sdp"
+        android:visibility="gone"
+        app:cardElevation="@dimen/Edu_spacing_control">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <TextView
+                style="@style/EduBtnLabel_Form"
+                android:text="@string/edu_lbl_continue" />
+
+            <ImageView
+                android:id="@+id/ivNext"
+                style="@style/EduBtnImg_Form" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

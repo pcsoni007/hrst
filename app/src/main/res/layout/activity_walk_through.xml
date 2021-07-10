@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.WalkThroughActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="380dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/theme2Viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:overScrollMode="never" />
+
+    <com.scg.hrst.utils.Theme2DotsIndicator
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        android:layout_margin="@dimen/Theme2_spacing_standard"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:dot_height="@dimen/Theme2_spacing_control"
+        app:dot_width="@dimen/Theme2_spacing_control" />
+
+    <RelativeLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dots"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/Theme2_textColorPrimary"
+            android:textAppearance="@style/Theme2FontBold"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            tools:text="All important health tips" />
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHeading"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:gravity="center_horizontal"
+            android:lines="3"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:textColor="@color/Theme2_textColorSecondary"
+            android:textSize="@dimen/_18sp"
+            tools:text="@string/theme2_sample_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_below="@id/tvSubHeading"
+            android:layout_marginTop="@dimen/_24sdp"
+            style="@style/Theme2MaterialButton"
+            android:id="@+id/btnNext"
+            android:text="@string/theme2_lbl_get_started"
+            />
+    </RelativeLayout>
+    <!--<include
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/theme2_toolbar"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

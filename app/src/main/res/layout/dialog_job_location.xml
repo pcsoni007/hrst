@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                app:tint="@android:color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/add_job_location"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/bt_save"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_xsmall"
+                android:paddingRight="@dimen/spacing_xsmall"
+                android:text="@string/SAVE"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:padding="@dimen/spacing_large">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_margin="5dp"
+                        android:textColorHint="@color/grey_60"
+                        app:hintTextColor="@color/black"
+                        android:textColor="@color/black"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textColor="@color/black"
+                            android:id="@+id/stDiag"
+                            android:hint="@string/state"
+                            android:cursorVisible="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:padding="0dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/stDiagPrg"
+                        android:layout_margin="13dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:indeterminateTint="@color/black"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_margin="5dp"
+                        android:textColorHint="@color/grey_60"
+                        app:hintTextColor="@color/black"
+                        android:textColor="@color/black"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textColor="@color/black"
+                            android:id="@+id/distDiag"
+                            android:hint="@string/district"
+                            android:cursorVisible="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:padding="0dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/distDiagPrg"
+                        android:layout_margin="13dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:indeterminateTint="@color/black"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxlarge"
+                        android:layout_margin="5dp"
+                        android:textColorHint="@color/grey_60"
+                        app:hintTextColor="@color/black"
+                        android:textColor="@color/black"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textColor="@color/black"
+                            android:id="@+id/areaName"
+                            android:hint="@string/place"
+                            android:padding="0dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!--<ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/prg"
+                        android:layout_margin="13dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:indeterminateTint="@color/black"
+                        />-->
+                </RelativeLayout>
+
+                <!--<com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/grey_60"
+                    app:hintTextColor="@color/black"
+                    android:textColor="@color/black"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:textColor="@color/black"
+                        android:id="@+id/totalCost"
+                        android:hint="@string/total_fuel_cost"
+                        android:padding="0dp"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

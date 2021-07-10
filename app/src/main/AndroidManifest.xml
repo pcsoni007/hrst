@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.scg.hrst">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HRST"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".ui.activity.QuizResultActivity"></activity>
+        <activity android:name=".ui.activity.QuizTestActivity" />
+        <activity android:name=".ui.activity.QuizSelectionActivity" />
+        <activity
+            android:name=".ui.activity.JobPostingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RecruiterRegistration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RecruiterDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.JobInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ViewAllJobsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.IndividualDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WalkThroughActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme2AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MobileSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EduAppTheme" />
+        <activity android:name=".ui.activity.AgentDashboard" />
+        <activity android:name=".ui.activity.AgentLogin" />
+        <activity android:name=".ui.activity.PersonRegistration" />
+        <activity android:name=".ui.activity.AgentRegistration" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:background="@drawable/edu_bg_bottom_navigation"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/Edu_spacing_standard">
+
+    <LinearLayout
+        android:id="@+id/llHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_6sdp"
+            app:srcCompat="@drawable/edu_ic_home"
+            app:tint="@color/Edu_colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edu_lbl_home"
+            android:textAppearance="@style/EduFontMedium"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/Edu_spacing_standard"
+            android:textSize="@dimen/Edu_font_size_medium"
+            android:paddingStart="@dimen/Edu_spacing_standard"
+            android:paddingEnd="@dimen/Edu_spacing_standard"
+            android:textColor="@color/Edu_colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivJob"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_6sdp"
+            app:srcCompat="@drawable/ic_job1"
+            app:tint="@color/Edu_textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jobs"
+            android:layout_gravity="center"
+            android:textSize="@dimen/Edu_font_size_medium"
+            android:textAppearance="@style/EduFontMedium"
+            android:paddingStart="@dimen/Edu_spacing_standard"
+            android:paddingEnd="@dimen/Edu_spacing_standard"
+            android:textColor="@color/Edu_textColorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_6sdp"
+            app:srcCompat="@drawable/edu__ic_user"
+            app:tint="@color/Edu_textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edu_lbl_profile"
+            android:textAppearance="@style/EduFontMedium"
+            android:layout_gravity="center"
+            android:textSize="@dimen/Edu_font_size_medium"
+            android:paddingStart="@dimen/Edu_spacing_standard"
+            android:paddingEnd="@dimen/Edu_spacing_standard"
+            android:textColor="@color/Edu_textColorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

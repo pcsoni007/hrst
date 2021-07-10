@@ -1,0 +1,615 @@
+<resources>
+    <string name="app_name">HRST</string>
+
+    <string name="no_interner_texr">No internet connections found. Check your connection or try again</string>
+    <string name="internetTxt">Checking if Internet Connectivity is Back or Not.......</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n"
+    </string>
+    <string name="error_msg">Error Message</string>
+    <string name="title">Title</string>
+    <string name="RETRY">RETRY</string>
+    <string name="email_id">Email Id</string>
+    <string name="email_mobile">Email Id or Mobile No</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="mobile_num">Mobile Number</string>
+    <string name="sendOtp">Send OTP</string>
+    <string name="verifyOtp">Verify OTP</string>
+    <string name="name">Name</string>
+    <string name="father_name">Your Father Name</string>
+    <string name="alernate_mobile_no">Alernate Mobile Number</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="bank_account_name">Bank Account Name</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="upload_aadhar">Upload Aadhar</string>
+    <string name="ifsc_code">IFSC Code</string>
+
+
+    <string-array name="invalid_mobile">
+        <item>9999999999</item>
+        <item>8888888888</item>
+        <item>7777777777</item>
+        <item>6666666666</item>
+    </string-array>
+
+    <string-array name="stateList">
+        <item>Andaman &amp; Nicobar</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhatisgarh</item>
+        <item>Dadra Nagarhaveli</item>
+        <item>Daman &amp; Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu &amp; Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+    <string-array name="no_skill_list">
+        <item>Cleaner/Janitor</item>
+        <item>Parking Lot Attendant</item>
+        <item>Fast Food Worker</item>
+        <item>Line Operator</item>
+        <item>Messenger</item>
+        <item>Sewing Machine Operator</item>
+        <item>Construction Labourer</item>
+        <item>Vegetable Harvester/Picker</item>
+        <item>Factory Worker</item>
+        <item>Farm Worker</item>
+        <item>Grocery Clerk</item>
+        <item>Elevator Installer</item>
+        <item>Lift Attendant</item>
+        <item>Landscapers</item>
+        <item>Masonry Worker</item>
+        <item>Tree Trimmer</item>
+        <item>Veterinary Assistant</item>
+        <item>Maid</item>
+        <item>Information Desk Clerk</item>
+        <item>Helper</item>
+    </string-array>
+
+    <string-array name="semi_skill_list">
+        <item>Retail Salesperson</item>
+        <item>Telephone Solicitor</item>
+        <item>Waiter/Waitress</item>
+        <item>Bartender</item>
+        <item>Flight Attendant</item>
+        <item>Taxi Driver</item>
+        <item>Laundry Operator</item>
+        <item>Nurse Assistant</item>
+        <item>Furniture Mover</item>
+        <item>File Clerk</item>
+        <item>Fisher Man</item>
+        <item>Sorter/Checker</item>
+        <item>Bhattiwala</item>
+        <item>Typist</item>
+        <item>Bill Man</item>
+        <item>Clerk</item>
+    </string-array>
+
+    <string-array name="skill_list">
+        <item>Carpenter and Master Carpenter</item>
+        <item>Millwright</item>
+        <item>Iron Worker</item>
+        <item>Drywall Hangers</item>
+        <item>Welder</item>
+        <item>Plumber</item>
+        <item>Insulation Installers</item>
+        <item>Turbine Mechanics</item>
+        <item>Ship Builder</item>
+        <item>Rod Buster</item>
+        <item>Electrician</item>
+        <item>Lineman</item>
+        <item>Riggers</item>
+        <item>Crane Operators</item>
+        <item>Masons</item>
+        <item>HVAC Technicians</item>
+        <item>Concrete Finishers</item>
+        <item>Painter</item>
+        <item>Secretary or Administrative Assistant</item>
+        <item>Sales Representative</item>
+        <item>Customer Service Representative</item>
+        <item>Nurse</item>
+        <item>Tailor</item>
+        <item>Office Clerk</item>
+        <item>Teacher or Teacher\'s Aide</item>
+        <item>Travel Agent</item>
+        <item>Mortgage Processor</item>
+        <item>Fast Food Cook</item>
+        <item>Computer Operator</item>
+        <item>Appliance Repair</item>
+        <item>Mechanic</item>
+        <item>Driver</item>
+        <item>Mistri</item>
+        <item>Cook</item>
+        <item>Decorator</item>
+    </string-array>
+
+    <string-array name="all_type_work">
+        <item>Cleaner/Janitor</item>
+        <item>Parking Lot Attendant</item>
+        <item>Fast Food Worker</item>
+        <item>Line Operator</item>
+        <item>Messenger</item>
+        <item>Sewing Machine Operator</item>
+        <item>Construction Labourer</item>
+        <item>Vegetable Harvester/Picker</item>
+        <item>Factory Worker</item>
+        <item>Farm Worker</item>
+        <item>Grocery Clerk</item>
+        <item>Elevator Installer</item>
+        <item>Lift Attendant</item>
+        <item>Landscapers</item>
+        <item>Masonry Worker</item>
+        <item>Tree Trimmer</item>
+        <item>Veterinary Assistant</item>
+        <item>Maid</item>
+        <item>Information Desk Clerk</item>
+        <item>Helper</item>
+        <item>Retail Salesperson</item>
+        <item>Telephone Solicitor</item>
+        <item>Waiter/Waitress</item>
+        <item>Bartender</item>
+        <item>Flight Attendant</item>
+        <item>Taxi Driver</item>
+        <item>Laundry Operator</item>
+        <item>Nurse Assistant</item>
+        <item>Furniture Mover</item>
+        <item>File Clerk</item>
+        <item>Fisher Man</item>
+        <item>Sorter/Checker</item>
+        <item>Bhattiwala</item>
+        <item>Typist</item>
+        <item>Bill Man</item>
+        <item>Clerk</item>
+        <item>Carpenter and Master Carpenter</item>
+        <item>Millwright</item>
+        <item>Iron Worker</item>
+        <item>Drywall Hangers</item>
+        <item>Welder</item>
+        <item>Plumber</item>
+        <item>Insulation Installers</item>
+        <item>Turbine Mechanics</item>
+        <item>Ship Builder</item>
+        <item>Rod Buster</item>
+        <item>Electrician</item>
+        <item>Lineman</item>
+        <item>Riggers</item>
+        <item>Crane Operators</item>
+        <item>Masons</item>
+        <item>HVAC Technicians</item>
+        <item>Concrete Finishers</item>
+        <item>Painter</item>
+        <item>Secretary or Administrative Assistant</item>
+        <item>Sales Representative</item>
+        <item>Customer Service Representative</item>
+        <item>Nurse</item>
+        <item>Tailor</item>
+        <item>Office Clerk</item>
+        <item>Teacher or Teacher\'s Aide</item>
+        <item>Travel Agent</item>
+        <item>Mortgage Processor</item>
+        <item>Fast Food Cook</item>
+        <item>Computer Operator</item>
+        <item>Appliance Repair</item>
+        <item>Mechanic</item>
+        <item>Driver</item>
+        <item>Mistri</item>
+        <item>Cook</item>
+        <item>Decorator</item>
+    </string-array>
+
+
+    <string-array name="not_selected">
+        <item>Not Selected</item>
+    </string-array>
+
+    <string-array name="working_hours">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="job_type">
+        <item>Part Time</item>
+        <item>Full Time</item>
+    </string-array>
+
+    <string-array name="shift">
+        <item>Morning</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="min_education">
+        <item>10th or Below 10th</item>
+        <item>12th Pass</item>
+        <item>ITI</item>
+        <item>Diploma</item>
+        <item>Poly Technique</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+    <!-- <string-array name="job_type">
+        <item>Not Selected</item>
+    </string-array>-->
+
+    <string-array name="invalid_aadhar">
+        <item>0000 0000 0000</item>
+        <item>1111 1111 1111</item>
+        <item>2222 2222 2222</item>
+        <item>3333 3333 3333</item>
+        <item>4444 4444 4444</item>
+        <item>5555 5555 5555</item>
+        <item>6666 6666 6666</item>
+        <item>7777 7777 7777</item>
+        <item>8888 8888 8888</item>
+        <item>9999 9999 9999</item>
+
+        <item>1000 0000 0000</item>
+        <item>2000 0000 0000</item>
+        <item>3000 0000 0000</item>
+        <item>4000 0000 0000</item>
+        <item>5000 0000 0000</item>
+        <item>6000 0000 0000</item>
+        <item>7000 0000 0000</item>
+        <item>8000 0000 0000</item>
+        <item>9000 0000 0000</item>
+
+
+        <item>1000 0000 0001</item>
+        <item>2000 0000 0002</item>
+        <item>3000 0000 0003</item>
+        <item>4000 0000 0004</item>
+        <item>5000 0000 0005</item>
+        <item>6000 0000 0006</item>
+        <item>7000 0000 0007</item>
+        <item>8000 0000 0008</item>
+        <item>9000 0000 0009</item>
+
+    </string-array>
+
+
+    <string name="theme2_font_bold">google_sans_bold.ttf</string>
+    <string name="theme2_sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="theme2_font_semi_bold">google_sans_medium.ttf</string>
+
+
+    ///////////Prokit Strings////////////////////
+    <!--    <string name="app_name">Education</string>-->
+    <string name="edu_font_bold">poppins_Bold.ttf</string>
+    <string name="edu_font_medium">poppins_medium.ttf</string>
+    <string name="edu_font_regular">poppins_regular.ttf</string>
+    <string name="edu_font_semibold">poppins_semi_bold.ttf</string>
+    <string name="edu_lbl_continue">Continue</string>
+    <string name="edu_hint_your_password">Your Password</string>
+    <string name="edu_hint_your_email">Your Email</string>
+    <string name="edu_info_login">Enter your login details to \n  access your account</string>
+    <string name="edu_info_sign_up">Start by entering your email \n address below.</string>
+    <string name="edu_lbl_forgot">Forgot</string>
+    <string name="edu_lbl_show">Show</string>
+    <string name="edu_lbl_allow">Allow</string>
+    <string name="edu_title_login">Log In</string>
+    <string name="edu_lbl_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="edu_lbl_create_account">Create Account</string>
+    <string name="edu_info_create_password">Your password must have at \n least one symbol &amp; 8 or \n more characters.</string>
+    <string name="edu_lbl_already_have_an_account">Already have an account?</string>
+    <string name="edu_lbl_sign_in">Sign In</string>
+    <string name="edu_lbl_skip">SKIP</string>
+    <string name="edu_lbl_notifications">Notifications</string>
+    <string name="edu_info_notification">Stay notified about new course \n  updates, scoreboard states and  \n  new friend follows.</string>
+    <string name="edu_lbl_new_quiz">New Quiz</string>
+    <string name="edu_lbl_what_would_you_like_to_learn_n_today_search_below">What would you like to learn \n  today? Search below.</string>
+    <string name="edu_lbl_hi_antonio">Hi, Antonio</string>
+    <string name="edu_username">Antonio Perez</string>
+    <string name="edu_user_info">1,53,675 XP</string>
+    <string name="edu_lbl_no_friends">No Friends!</string>
+    <string name="edu_info_profile">Its lonely here. Add some \n friends to make studying \n  more fun!</string>
+    <string name="edu_lbl_home">Home</string>
+    <string name="edu_lbl_quiz">Quiz</string>
+    <string name="edu_lbl_profile">Profile</string>
+    <string name="edu_lbl_badges">Badges</string>
+    <string name="edu_lbl_friends">Friends</string>
+    <string name="edu_lbl_scores">Scores</string>
+    <string name="edu_info_que1">What is Art?</string>
+    <string name="edu_info_ans1">What does it really mean?</string>
+    <string name="edu_info_que2">Different Forms of Art</string>
+    <string name="edu_info_ans2">It is just not painting.</string>
+    <string name="edu_info_que4">Color Theory</string>
+    <string name="edu_info_ans4">Understanding Color.</string>
+    <string name="edu_info_que3">Art Principle</string>
+    <string name="edu_info_ans3">Why are they important?</string>
+    <string name="edu_lbl_no_course">No Course</string>
+    <string name="edu_info_course_study">Choose a course from \n Coursed tab or use the button \n below to start.</string>
+    <string name="edu_lbl_begin">Begin</string>
+    <string name="edu_lbl_heading1">Introduction</string>
+    <string name="edu_info_heading1">Biology is the study of living things. It encompasses the cellular basis of living things, the energy metabolism that underlies the activities of life, and the genetic basis for inheritance in organisms. Biology also includes the study of evolutionary relationships among organisms and the diversity of life on Earth.</string>
+    <string name="edu_lbl_heading2">The Scientific method</string>
+    <string name="edu_info_heading2">The scientific method involves making observations and asking questions. Scientists form hypotheses based on these observations and then develop controlled experiments to collecting and analyze data. Using this data, they are able to draw conclusions and form questions for new scientific research.</string>
+    <string name="edu_lbl_heading3">Scientific method example: \n Failure to toast</string>
+    <string name="edu_info_heading3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.dummy text of the printing and typesetting.</string>
+    <string name="edu_lbl_biology_amp_scientific_method">Biology &amp; The \n Scientific Method</string>
+    <string name="edu_text_4_to_8_lesson">4 to 8 lesson</string>
+    <string name="edu_info_mobile">Enter your mobile number </string>
+    <string name="edu_info_verification">We texted you a code to verify   your phone number</string>
+    <string name="edu_lbl_i_didn_t_receive_a_code">I didn\'t receive a code</string>
+    <string name="edu_lbl_resend">Resend</string>
+    <string name="edu_title_create_pwd">Create Password</string>
+    <string name="edu_title_lesson">LESSON</string>
+    <string name="edu_title_test">TEST</string>
+    <string name="edu_title_discuss">Discuss</string>
+    <string name="edu_title_mobile">Let\'s Get Started</string>
+    <string name="edu_title_new_account">New Account</string>
+    <string name="edu_title_verification">Verification</string>
+    <string name="edu_lbl_you_are_awsom">Your are awesome!</string>
+    <string name="edu_info_congo">Congratulations for getting \n all the answer correct!</string>
+    <string name="edu_lbl_name">Name</string>
+    <string name="edu_lbl_email">Email</string>
+    <string name="edu_info_update_email">Enter your new email \n address below.</string>
+    <string name="edu_lbl_update_email_info">we will send an email to verify \n your new email address</string>
+    <string name="edu_lbl_save">Save</string>
+    <string name="edu_title_update_email">Update Email</string>
+    <string name="edu_lbl_people">People</string>
+    <string name="edu_lbl_add_friend">Add Friend</string>
+    <string name="edu_lbl_password">Password</string>
+    <string name="edu_subinfo_password">updated 2 week ago</string>
+    <string name="edu_lbl_phone">Phone Number</string>
+    <string name="edu_mobile">+00 356 646 234</string>
+    <string name="edu_email">antonio@gmail.com</string>
+    <string name="edu_lbl_scoreboard">Scoreboard</string>
+    <string name="edu_lbl_new_course">New Courses</string>
+    <string name="edu_lbl_study_reminder">Study Reminder</string>
+    <string name="edu_lbl_help">Help Center</string>
+    <string name="edu_lbl_privacy"><![CDATA[Privacy & Terms]]></string>
+    <string name="edu_lbl_contact_us">Contact Us</string>
+    <string name="edu_lbl_a">A.</string>
+    <string name="edu_lbl_b">B.</string>
+    <string name="edu_lbl_c">C.</string>
+    <string name="edu_lbl_d">D.</string>
+    <string name="edu_lbl_retry">Retry</string>
+    <string name="edu_lbl_logout">Log out</string>
+    <string name="edu_lbl_edit_profile">Edit Profile</string>
+    <string name="edu_hint_mobile">Your Mobile Number</string>
+    <string name="edu_hint_description">Description</string>
+    <string name="edu_lbl_submit">Submit</string>
+    <string name="edu_hint_old_pwd">Old Password</string>
+    <string name="edu_hint_new_pwd">New Password</string>
+    <string name="edu_hint_confirm_pwd">Confirm Password</string>
+    <string name="edu_lbl_call_request">Call Request</string>
+    <string name="edu_lbl_contact_us_email">Response within 24 business hours</string>
+    <string name="edu_title_contact_us">Contact Us</string>
+    <string name="edu_hint_first_name">Your First Name</string>
+    <string name="edu_hint_last_name">Your Last Name</string>
+    <string name="edu_lbl_save_profile">Save Profile</string>
+    <string name="edu_title_help">Help Center</string>
+    <string name="edu_title_change_password">Change Password</string>
+    <string name="edu_text_googlelink">https://www.google.com/</string>
+    <string name="edu_error_permission_required">Location Permission Required</string>
+    <string name="edu_hint_review">Add Discussion</string>
+    <string name="edu_lbl_search">Search</string>
+    <string name="edu_text_maillink">https://www.Gmail.com/</string>
+    <string name="edu_text_facebookLink">https://www.facebook.com/</string>
+    <string name="edu_text_TwitterLink">https://www.twitter.com/</string>
+    <string name="edu_error_something_went_wrong">Something went wrong</string>
+    <string name="edu_lbl__5_out_5">5 out 5</string>
+    <string name="edu__50_xp">+50 XP</string>
+    <string name="edu_toast_successfully_add">Successfully Added</string>
+    <string name="edu_toast_successfully_remove">Successfully Remove</string>
+    <string name="edu_lbl_remove_friend">Remove Friend</string>
+    <string name="edu_toast_successfully_saved_profile">Successfully Saved Profile</string>
+    <string name="edu_lbl_select_image">Select Image</string>
+    <string name="edu_toast_submit">Submitted</string>
+    <string name="edu_toast_thank_you">Thank You Successfully Added</string>
+    <string name="edu_toast_pwd_updated">Password Updated</string>
+    <string name="edu_lbl_hide">HIDE</string>
+    <string name="edu_lbl_setting">Settings</string>
+    <string name="edu_toast_email_update">Successfully Email Updated</string>
+    <string name="edu_title_all">All</string>
+    <string name="edu_lbl_view_all">View all</string>
+    <string name="edu_title_quiz">New Quiz</string>
+    <string name="edu_title_completed_quiz">Completed</string>
+    <string name="edu_lbl_result">Result</string>
+    <string name="edu_hint_your_mobile">Mobile Number</string>
+
+    //Newly Added
+    <string name="_91">+91</string>
+    <string name="_0">0</string>
+    <string name="theme2_lbl_get_started">Get Started</string>
+    <string name="verify_mobile">Verify Mobile Number</string>
+    <string name="lets_get_started">Let\'s Get Started</string>
+    <string name="verification">Verification</string>
+    <string name="enter_otp">Enter OTP sent to your Mobile Number</string>
+    <string name="enter_otp_email">Enter OTP sent to your Email Id</string>
+    <string name="jobs">Jobs</string>
+    <string name="new_jobs">New Jobs</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="register_yourself">Register yourself</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome !</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_yourself_as">Register Yourself As</string>
+    <string name="your_email">Your Email Id</string>
+    <string name="or">OR</string>
+    <string name="your_mobile_no">Your Mobile Number</string>
+    <string name="btPrev">Previous</string>
+    <string name="next">Next</string>
+    <string name="skilled">Skilled</string>
+    <string name="semi_skilled">Semi Skilled</string>
+    <string name="unskilled">Unskilled</string>
+    <string name="select_type_of_job_you_can_do">Select Type of Job you can do</string>
+    <string name="your_aadhar_number">Your Aadhar Number</string>
+    <string name="type_of_work_you_can_do">Type of work you can do</string>
+    <string name="alt_mobile_no">Your Alternate Mobile Number</string>
+    <string name="your_alt_mobile_no">Your Alternate Mobile Number</string>
+    <string name="add">ADD</string>
+    <string name="type_of_work_added">Added Work </string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="click_on_check_box_to_agree_with_our_terms_and_conditions">Click On Check Box to Agree with Our Terms and Conditions</string>
+    <string name="company_name">Name</string>
+    <string name="company_address">Official Address</string>
+    <string name="company_pan">PAN</string>
+    <string name="company_gst">GST Number</string>
+    <string name="website">Company Website</string>
+    <string name="type_of_work_company_do">Type of Work Company Does</string>
+    <string name="company_contact_details">Company Contact Details</string>
+    <string name="company_details">Company Details</string>
+    <string name="company_registration">Company Registration</string>
+    <string name="individual_registration">Individual Registration</string>
+    <string name="skip">SKIP</string>
+    <string name="post_job">Post Job</string>
+    <string name="job_information">Job Information</string>
+    <string name="your_name">Your Name</string>
+    <string name="address">Your Address</string>
+    <string name="dob">Your Date of Birth</string>
+    <string name="company_organization_recruter">COMPANY / ORGANIZATION</string>
+    <string name="individual_recruiter">INDIVIDUAL RECRUITER</string>
+    <string name="recruiter">RECRUITER</string>
+    <string name="which_are_u">Which Are You ?</string>
+    <string name="company_contact_person_name">Contact Person Name</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="recruiter_registration">Recruiter Registration</string>
+    <string name="recruiter_details">Recruiter Details</string>
+    <string name="recruiter_contact_details">Recruiter Contact Details</string>
+    <string name="recruiter_work_details">Type of work you need People for</string>
+    <string name="individual_dashobard_sub_heading">You Can Search for work here, Do not need to go any where else</string>
+    <string name="suspendisse_ornare_est_ac_auctor_pulvinar">Suspendisse ornare est ac auctor pulvinar</string>
+    <string name="the_backpacker">The Backpacker</string>
+    <string name="job_seeker">JOB SEEKER</string>
+    <string name="job_seeker_registration">Job Seeker Registration</string>
+    <string name="add_job_location">Add Job Location</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="place">City/Place</string>
+    <string name="SAVE">SAVE</string>
+    <string name="answer_few_questions">Answer few Questions to show your proficiency</string>
+    <string name="select_quiz">Quizzes</string>
+
+
+</resources>

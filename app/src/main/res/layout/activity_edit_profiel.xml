@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Edu_app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.EditProfileActivity">
+
+    <include layout="@layout/hrst_toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_marginTop="@dimen/Edu_spacing_large"
+        android:id="@+id/editProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.scg.hrst.utils.EduCircleImageView
+            android:id="@+id/ivProfileImage"
+            android:onClick="onClick"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/Edu_spacing_standard"
+            android:layout_marginEnd="@dimen/Edu_spacing_standard"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/Edu_white"
+            android:elevation="@dimen/Edu_spacing_control_half"
+            app:civ_border_width="@dimen/_4sdp" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:onClick="onClick"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/Edu_spacing_standard"
+            android:layout_marginBottom="@dimen/Edu_spacing_middle"
+            android:background="@drawable/edu_bg_circle_course"
+            android:backgroundTint="@color/Edu_white"
+            android:padding="@dimen/_6sdp"
+            android:elevation="@dimen/Edu_spacing_control_half"
+            android:src="@drawable/edu_ic_pencil_line"
+            app:layout_anchor="@id/ivProfileImage"
+            app:layout_anchorGravity="end|bottom" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:background="@drawable/edu_bg_shadow"
+        android:layout_marginTop="@dimen/Edu_spacing_large"
+        style="@style/EduForm_Card"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/EduEditText_Form"
+                android:hint="@string/edu_hint_first_name"
+                android:inputType="text"
+                android:id="@+id/firstName"
+                android:maxLength="10"
+                />
+
+            <include layout="@layout/layout_view_line"/>
+
+            <EditText
+                style="@style/EduEditText_Form"
+                android:hint="@string/edu_hint_last_name"
+                android:inputType="text"
+                android:id="@+id/lastName"
+                android:maxLength="10"
+                />
+
+            <include layout="@layout/layout_view_line"/>
+
+            <EditText
+                style="@style/EduEditText_Form"
+                android:hint="@string/your_email"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailId"
+                android:maxLength="35"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSaveProfile"
+        style="@style/EduForm_Card"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:cardBackgroundColor="@color/Edu_colorPrimary"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardElevation="@dimen/Edu_spacing_control">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <TextView
+                style="@style/EduBtnLabel_Form"
+                android:text="@string/edu_lbl_save_profile"
+                android:id="@+id/submitBtn"
+                />
+
+            <ImageView
+                android:id="@+id/ivNext"
+                style="@style/EduBtnImg_Form" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Edu_app_background"
+    android:orientation="vertical"
+    tools:context=".ui.activity.RecruiterDashboard">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom" />
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/hrst_layout_bottom_navigation"/>
+
+</RelativeLayout>
